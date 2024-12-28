@@ -1,0 +1,85 @@
+/* GLOBAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink: #e7e9eb;
+    --gray: #777777;
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.heading1{
+    font-size: 60px;
+}
+
+.gray{
+    color: #777777;   
+}
+
+/* HOME STYLES */
+
+.banner{
+    background-color: var(--pink);
+}
+
+.content{
+    height: 700px;
+    width: 100%;
+}
+
+.banner-img{
+    width: 90%;
+}
+
+/* ABOUT STYLES */
+.skillset *{
+    background-color: var(--pink);
+    color: var(--gray);
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+/* PROJECTS STYLES */
+.github-icon{
+    width: 13%;
+}
+
+/* CONTACT */
+.contact{
+    color: var(--pink);
+}
+
+
+@media screen and (max-width: 992px) {
+
+    /* HOME */
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* ABOUT */
+
+    .skillset{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* PROJECTS */
+
+    .project-img{
+        margin-bottom: 20px;
+    }
+    .project-desc{
+        text-align: center;
+    }
+}
